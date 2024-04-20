@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bashly.com - Реєстрація</title>
+    <link rel="shortcut icon" href="shortcut.png">
+    <!-- Підключення Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Підключення власних стилів -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+    <!--logo -->
+    <a class="navbar-brand mr-auto" href="index.html">
+        <img class="logo" src="logo.png" alt="logo">
+    </a>
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Саме меню -->
+    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="about_us.html">Про нас</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Реєстрація</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="logout.html">Вхід</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Профіль</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="reg">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Реєстрація користувача</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Ім'я:</label>
+                <input type="text" class="form-control" id="name" placeholder="Введіть ім'я">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="Введіть електронну пошту">
+                <small class="text-danger" id="emailError"></small>
+            </div>
+            <div class="form-group">
+                <label for="gender">Стать:</label>
+                <select class="form-control" id="gender">
+                    <option>Чоловіча</option>
+                    <option>Жіноча</option>
+                    <option>Інше</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dob">Дата народження:</label>
+                <input type="date" class="form-control" id="dob">
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" class="form-control" id="password" name="password" required placeholder="************">
+            </div>
+            <button type="submit" class="btn btn-primary">Зареєструватися</button>
+        </form>
+    </div>
+    
+    <div class="container mt-4 mb-5">
+        <p class="text-center" id="vhid">Якщо у вас вже є профіль, вам не потрібно реєструватись. <a href="logout.html">Увійдіть</a>.</p>
+    </div>
+    
+<script src="/js/controller/LoginController.js"></script>
+<script src="/js/model/LoginModel.js"></script>
+<script src="/js/view/LoginView.js"></script>
+
+
+</body>
+</html>

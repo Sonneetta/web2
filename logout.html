@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bashly.com - Реєстрація</title>
+    <link rel="shortcut icon" href="shortcut.png">
+    <!-- Підключення Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Підключення власних стилів -->
+    <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+        <!--logo -->
+        <a class="navbar-brand mr-auto" href="index.html">
+            <img class="logo" src="logo.png" alt="logo">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Саме меню -->
+        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about_us.html">Про нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Реєстрація</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout.html">Вхід</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Профіль</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="reg">
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Вхід у профіль</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Введіть email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Введіть пароль">
+                </div>
+                <button type="submit" class="btn btn-primary">Увійти</button>
+            </form>
+        </div>
+
+        <div class="container mt-4 mb-5">
+            <p class="log text-center" id="reg">Якщо у вас немає профілю, вам потрібно реєструватись. <a href="login.html">Зареєструватись</a>.</p>
+        </div>
+    </div>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/view/VhidView.js"></script>
+    <script src="js/model/VhidModel.js"></script>
+    <script src="js/controller/VhidController.js"></script>
+    <!-- <script>
+    var LoginController = {
+        loginUser: function(email, password) {
+            var users = JSON.parse(localStorage.getItem('users')) || [];
+            var user = users.find(function(user) {
+                return user.email === email && user.password === password;
+            });
+    
+            if (user) {
+                alert("Ви успішно увійшли!");
+                window.location.href = 'profile.html';
+            } else {
+                alert("Неправильний email або пароль");
+            }
+        }
+    };
+    
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        LoginController.loginUser(email, password);
+    });
+    </script> -->
+   
+</body>
+</html>

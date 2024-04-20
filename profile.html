@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bashly.com - Профіль користувача</title>
+    <link rel="shortcut icon" href="shortcut.png">
+    <!-- Підключення Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Підключення власних стилів -->
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+<body>
+    <div class="profile">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+            <!--logo -->
+            <a class="navbar-brand mr-auto" href="index.html">
+                <img class="logo" src="logo.png" alt="logo">
+            </a>
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Саме меню -->
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Реєстрація</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.html">Вхід</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Профіль</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container_profile">
+            <h2>Профіль користувача</h2>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th scope="row">Ім'я</th>
+                        <td id="userName"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Email</th>
+                        <td id="userEmail"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Стать</th>
+                        <td id="userGender"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Дата народження</th>
+                        <td id="userDob"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="editProfileButton" class="btn btn-secondary my-3">Змінити профіль</button>
+
+            <form id="editProfileForm" class="d-none  position-fixed top-50 start-50 translate-middle bg-white p-4 rounded shadow-lg " style="z-index: 1000; ">
+                <label for="name" class="form-label">Ім'я:</label>
+                <input type="text" id="name" name="name" class="form-control mb-3" required>
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control mb-3" required>
+                <label for="gender" class="form-label">Стать:</label>
+                <select id="gender" name="gender" class="form-control mb-3" required>
+                    <option value="Жіноча">Жіноча</option>
+                    <option value="Чоловіча">Чоловіча</option>
+                    <option value="Інше">Інше</option>
+                </select>
+                <label for="dob" class="form-label">Дата народження:</label>
+                <input type="date" id="dob" name="dob" class="form-control mb-3" required>
+                <button type="submit" class="btn btn-success">Зберегти зміни</button>
+            </form>
+        </div>
+        <div class="container mt-4 mb-5">
+            <p class="log text-center">Ваші дані в безпеці</p>
+        </div>
+    </div>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/controller/controller.js"></script>
+        <script src="js/model/model.js"></script>
+        <script src="js/view/view.js"></script>
+        
+    </body>
+</html>

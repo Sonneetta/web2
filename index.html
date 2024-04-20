@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bashly.com</title>
+    <link rel="shortcut icon" href="shortcut.png">
+    <!-- Підключення Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Підключення власних стилів -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+        <!--logo -->
+        <a class="navbar-brand mr-auto" href="#">
+            <img class="logo" src="logo.png" alt="logo">
+        </a>
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Саме меню -->
+        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about_us.html">Про нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Реєстрація</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout.html">Вхід</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Профіль</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Опитування про відвідані країни та міста</h1>
+           
+            <div class="survey ">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="country">Країна, яку ви відвідали:</label>
+                            <input type="text" class="form-control" id="country" placeholder="Введіть назву країни">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="city">Місто, яке ви відвідали:</label>
+                            <input type="text" class="form-control" id="city" placeholder="Введіть назву міста">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Як ви оцінюєте якість харчування під час вашої поїздки?</label>
+                            <br>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="foodQuality1" name="foodQuality" value="Відмінна">
+                                <label class="form-check-label" for="foodQuality1">Відмінна</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="foodQuality2" name="foodQuality" value="Добра">
+                                <label class="form-check-label" for="foodQuality2">Добра</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="foodQuality3" name="foodQuality" value="Задовільна">
+                                <label class="form-check-label" for="foodQuality3">Задовільна</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="foodQuality4" name="foodQuality" value="Погана">
+                                <label class="form-check-label" for="foodQuality4">Погана</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="foodQuality5" name="foodQuality" value="Дуже погана">
+                                <label class="form-check-label" for="foodQuality5">Дуже погана</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Як ви оцінюєте якість транспорту, яким ви користувалися під час подорожі?</label>
+                            <br>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="transportQuality1" name="transportQuality" value="Відмінна">
+                                <label class="form-check-label" for="transportQuality1">Відмінна</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="transportQuality2" name="transportQuality" value="Добра">
+                                <label class="form-check-label" for="transportQuality2">Добра</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="transportQuality3" name="transportQuality" value="Задовільна">
+                                <label class="form-check-label" for="transportQuality3">Задовільна</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="transportQuality4" name="transportQuality" value="Погана">
+                                <label class="form-check-label" for="transportQuality4">Погана</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="transportQuality5" name="transportQuality" value="Дуже погана">
+                                <label class="form-check-label" for="transportQuality5">Дуже погана</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Чи задоволені ви екскурсіями та розвагами, які ви вибрали?</label>
+                            <br>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="excursionsSatisfaction1" name="excursionsSatisfaction" value="Так, дуже">
+                                <label class="form-check-label" for="excursionsSatisfaction1">Так, дуже</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="excursionsSatisfaction2" name="excursionsSatisfaction" value="Так, трохи">
+                                <label class="form-check-label" for="excursionsSatisfaction2">Так, трохи</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="excursionsSatisfaction3" name="excursionsSatisfaction" value="Ні, трохи">
+                                <label class="form-check-label" for="excursionsSatisfaction3">Ні, трохи</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="excursionsSatisfaction4" name="excursionsSatisfaction" value="Ні, зовсім не задоволені">
+                                <label class="form-check-label" for="excursionsSatisfaction4">Ні, зовсім не задоволені</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Чи радите ви цю поїздку своїм друзям чи родині?</label>
+                            <br>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="recommendation1" name="recommendation" value="Так, з упевненістю">
+                                <label class="form-check-label" for="recommendation1">Так, з упевненістю</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="recommendation2" name="recommendation" value="Так, але з певними зауваженнями">
+                                <label class="form-check-label" for="recommendation2">Так, але з певними зауваженнями</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="recommendation3" name="recommendation" value="Ні, не раджу">
+                                <label class="form-check-label" for="recommendation3">Ні, не раджу</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="question2">Яка була ваша витрата на подорож (в гривнях)?</label>
+                            <input type="number" class="form-control" id="question2" placeholder="Введіть витрати">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="question1">Яка була загальна оцінка вашої подорожі?</label>
+                            <input type="number" class="form-control" id="question1" min="1" max="10" placeholder="Вкажіть оцінку від 1 до 10">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="impressions">Ваші враження:</label>
+                        <textarea class="form-control" id="impressions" rows="3" placeholder="Опишіть ваші враження"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Відправити</button>
+                    <button type="button" class="btn btn-success d-none" id="results-btn">Результати</button>
+                    <button id="showResultsButton" style="display: none;">Результати</button>
+                    <div id="resultsContainer"></div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/controller/SurveyControler.js"></script>
+    <script src="js/model/SurveyModel.js"></script>
+    <script src="js/view/SurveyView.js"></script>
+
+
+</body>
+</html>
